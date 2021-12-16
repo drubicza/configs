@@ -1,0 +1,158 @@
+[user]
+    name = 
+    email = 
+    password = 
+[core]
+    editor = vim
+    excludesfile = ~/.gitignore
+[sendemail]
+    # smtpencryption = tls
+    # smtpserver = smtp.gmail.com
+    # smtpuser =
+    # smtppass =
+    # smtpserverport = 587
+[web]
+    browser = google-chrome
+[instaweb]
+    # httpd = apache2 -f
+[rerere]
+    enabled = 1
+    autoupdate = 1
+[alias]
+    s = status
+    sb = status -s -b
+    #############
+    sa = stash apply
+    sc = stash clear
+    sd = stash drop
+    sl = stash list
+    sp = stash pop
+    ss = stash save
+    sw = stash show
+    #############
+    d = diff
+    dc = diff --cached
+    dl = difftool
+    dlc = difftool --cached
+    dk = diff --check
+    dck = diff --cached --check
+    #############
+    c = clone
+    co = commit
+    ca = commit -a
+    cm = commit -m
+    cam = commit -am
+    cd = commit --amend
+    cad = commit -a --amend
+    #############
+    a = add .
+    ai = add -i
+    #############
+    ap = apply
+    as = apply --stat
+    ac = apply --check
+    #############
+    ama = am --abort
+    amr = am --resolved
+    ams = am --skip
+    #############
+    l = log --oneline
+    lg = log --oneline --graph --decorate
+    #############
+    o = checkout
+    ob = checkout -b
+    #############
+    b = branch
+    ba = branch -a
+    bd = branch -d
+    br = branch -r
+    #############
+    f = fetch
+    fo = fetch origin
+    #############
+    fp = format-patch
+    #############
+    fk = fsck
+    #############
+    m = merge
+    ma = merge --abort
+    mc = merge --continue
+    ms = merge --skip
+    #############
+    pr = prune -v
+    #############
+    ps = push
+    psf = push -f
+    psu = push -u
+    pso = push origin
+    psom = push origin main
+    #############
+    p = pull
+    plu = pull -u
+    plo = pull origin
+    plp = pull upstream
+    plom = pull origin master
+    plpm = pull upstream master
+    #############
+    pb = pull --rebase
+    pbo = pull --rebase origin
+    pbp = pull --rebase upstream
+    pbom = pull --rebase origin master
+    pbpm = pull --rebase upstream master
+    #############
+    rb = rebase
+    rba = rebase --abort
+    rbc = rebase --continue
+    rbi = rebase --interactive
+    rbs = rebase --skip
+    #############
+    re = reset
+    rh = reset HEAD
+    reh = reset --hard
+    rem = reset --mixed
+    res = reset --soft
+    rehh = reset --hard HEAD
+    remh = reset --mixed HEAD
+    resh = reset --soft HEAD
+    #############
+    r = remote
+    ra = remote add
+    rm = remote rm
+    rv = remote -v
+    rp = remote prune
+    rs = remote show
+    rso = remote show origin
+    rpo = remote prune origin
+    #############
+    w = show
+    wp = show -p
+    wr = show -p --no-color
+    #############
+    human = name-rev --name-only --refs=refs/heads/*
+[color]
+    ui = always
+    ui = true
+[color "branch"]
+    current = yellow bold
+    local = green bold
+    remote = cyan bold
+[color "diff"]
+    meta = yellow bold
+    frag = magenta bold
+    old = red bold
+    new = green bold
+    whitespace = red reverse
+[color "status"]
+    added = green bold
+    changed = yellow bold
+    untracked = red bold
+[diff]
+    tool = vimdiff
+[difftool]
+    prompt = false
+[push]
+    default = simple
+[help]
+    autocorrect = 1
+[pull]
+    rebase = false
